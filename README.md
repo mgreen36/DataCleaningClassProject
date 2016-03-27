@@ -6,6 +6,8 @@ The dataset includes the following files:
 - 'README.md'
 - 'Codebook.md'
 
+set your directory to the root of the UCI HAR Dataset - 
+   the script will access the files relative to the root
 Create the tidy data sets by sourcing run_analysis.R
 
 The following describes the program variables.

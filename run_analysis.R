@@ -1,6 +1,6 @@
 
 library(dplyr)
-setwd("/Users/mgreen/CourseraDataScience/CleaningData/data/UCI HAR Dataset/test")
+setwd("test")
 file <- "X_test.txt"
 X_test <- read.table(file,sep = "", header= F, na.strings = "", stringsAsFactors = F)
 file <- "y_test.txt"
@@ -10,7 +10,7 @@ subject_test <- read.table(file,sep = "", header= F, na.strings = "", stringsAsF
 
 
 
-setwd("/Users/mgreen/CourseraDataScience/CleaningData/data/UCI HAR Dataset/train")
+setwd("../train")
 file <- "X_train.txt"
 X_train <- read.table(file,sep = "", header= F, na.strings = "", stringsAsFactors = F)
 file <- "y_train.txt"
@@ -22,7 +22,7 @@ mergedX <- rbind(X_test,X_train)
 
 
 
-setwd("/Users/mgreen/CourseraDataScience/CleaningData/data/UCI HAR Dataset")
+setwd("..")
 file <- "features.txt"
 cols <- read.table(file,sep = "", header= F, na.strings = "", stringsAsFactors = F)
 col_list <- cols[,2]
