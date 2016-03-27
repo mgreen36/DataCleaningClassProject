@@ -54,5 +54,6 @@ mergedX[,"Subject"] <- msubject[,"Subject"]
 options(dplyr.width = Inf)
 summaryData <- mergedX %>% group_by(Activity,Subject) %>% summarise_each(funs(mean))
  
+write.table(summaryData,"summary.txt",row.name=FALSE)
 
 
