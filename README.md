@@ -10,6 +10,8 @@ set your directory to the root of the UCI HAR Dataset -
    the script will access the files relative to the root
 Create the tidy data sets by sourcing run_analysis.R
 
+The program writes summary.txt containing the second tidy data set to the root directory
+
 The following describes the program variables.
 
 mergedSaved contains the first tidy data set 
